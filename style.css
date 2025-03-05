@@ -1,0 +1,202 @@
+/* Reset & Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    background: #050505;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Navbar dengan Gradasi Futuristik */
+  nav {
+    background: linear-gradient(90deg, #0c002b, #230066, #001f4d);
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.7);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0;
+    border-bottom: 2px solid rgba(0, 217, 255, 0.8);
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #00d9ff;
+    text-decoration: none;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-menu li {
+    margin-left: 25px;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    color: #00c3ff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1em;
+    transition: color 0.3s;
+  }
+  
+  .nav-menu li a:hover {
+    color: #00ffff;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #050505, #001f4d);
+    padding: 120px 0;
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+    }
+  }
+
+.hero-image {
+  position: relative;
+  width: 350px; /* Lebar layar iPhone */
+  height: 450px; /* Tinggi layar iPhone */
+  padding: 10px;
+  border: 4px solid #00d9ff; /* Warna border */
+  border-radius: 40px; /* Sudut melengkung khas iPhone */
+  background: #111; /* Bezel hitam */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Gambar di dalam iPhone */
+.hero-image img {
+  width: 92%;
+  height: 92%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+/* Notch (Poni iPhone) */
+.hero-image::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 20px;
+  background: #000; /* Warna notch */
+  border-radius: 15px;
+}
+
+/* Tombol Home iPhone */
+.hero-image::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 6px;
+  background: #333; /* Warna tombol */
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+  
+  /* Teks Hero tanpa efek shadow */
+  .hero-text h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3em;
+    color: #00d9ff;
+  }
+  
+  .hero-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: #e0e0e0;
+  }
+  
+  /* Section Styles */
+  .section {
+    background: #0a0a0a;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 40px 0;
+    box-shadow: 0 4px 15px rgba(0, 217, 255, 0.5);
+  }
+  
+  .section h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    color: #00d9ff;
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.8;
+    color: #cccccc;
+  }
+  
+  /* Link Styles */
+  .section a {
+    color: #00d9ff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .section a:hover {
+    color: #00ffff;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #050505;
+    color: #999;
+    font-size: 0.9em;
+    border-top: 2px solid rgba(0, 217, 255, 0.8);
+  }
+   

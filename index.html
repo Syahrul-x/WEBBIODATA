@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV Biodata</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:ital,wght@0,300;0,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container nav-container">
+      <a href="#" class="logo">Syahrul's Web</a>
+      <ul class="nav-menu">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#biography">Biografi</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-container">
+      <div class="hero-image">
+        <img src="image.jpg/foto1.jpg" alt="Syahrul">
+      </div>
+      <div class="hero-text">
+        <h1>Hii there!!👋, I am Muhammad Syahrul Ramadhani</h1>
+        <p>Student & Front-End Enthusiast</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah mahasiswa Sistem Informasi di Fakultas Ilmu Komputer, Universitas Brawijaya, dengan minat di bidang pemrograman, pengembangan web, dan disiplin terkait. Selama perkuliahan, saya belajar berbagai konsep dasar dalam ilmu komputer dan pendidikan, serta mulai mengaplikasikan pengetahuan tersebut dalam beberapa proyek. Pengalaman ini membantu saya untuk belajar lebih banyak tentang dunia IT dan memperkuat keterampilan yang saya miliki.</p>
+      </div>
+    </section>
+
+    <section id="biography" class="section biography">
+      <div class="container">
+        <h2>Biografi</h2>
+        <p>Saya, Muhammad Syahrul Ramadhani, adalah seorang mahasiswa di Fakultas Ilmu Komputer, Universitas Brawijaya, yang memiliki minat mendalam di dunia teknologi, terutama dalam pengembangan web dan pemrograman. Sejak kecil, saya tertarik dengan dunia digital dan selalu berusaha mengeksplorasi berbagai aspek teknologi, baik dari sisi desain maupun pengembangan perangkat lunak.
+
+            Selama perkuliahan, saya memperdalam pengetahuan tentang ilmu komputer, dengan fokus pada pengembangan web dan pemrograman front-end. Saya telah mengerjakan berbagai proyek, mulai dari website pribadi hingga aplikasi berbasis web, dan selalu berupaya untuk belajar dan meningkatkan keterampilan teknis saya.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Kontak</h2>
+        <p>Email: <a href="mailto:msyahrulram@student.ub.ac.id">msyahrulram@student.ub.ac.id</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammad-syahrul-ramadhani-879873280?" target="_blank">https://www.linkedin.com/in/muhammad-syahrul-ramadhani-879873280?</a></p>
+        <p>GitHub: <a href="https://github.com/Syahrul-x" target="_blank">https://github.com/Syahrul-x</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Muhammad Syahrul Ramadhani. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId && targetId.startsWith('#')) {
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            // Scroll target element ke tengah tampilan
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
